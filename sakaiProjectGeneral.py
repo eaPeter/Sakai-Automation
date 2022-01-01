@@ -28,6 +28,7 @@ def Login(studID, pin):
 Login(studentID, pin)
 
 #Default grades
+#Each value of the 'grade' dictionary can be replaced with your default grades
 grade = {
     'DCIT200_grade' : '-',
     'DCIT202_grade' : '-',
@@ -120,8 +121,9 @@ while True:
         print('DCIT 206: ' + grade206)
         print('DCIT 208: ' + grade208)
         print('DCIT 212: ' + grade212)
+        print('')
+        time.sleep(30)
         driver.refresh()
-        time.sleep(20)
         break
 
     elif grade['DCIT200_grade'] != grade200 or grade['DCIT202_grade'] != grade202 or grade['DCIT204_grade'] != grade204 or grade['DCIT206_grade'] != grade206 or grade['DCIT208_grade'] != grade208 or grade['DCIT212_grade'] != grade212:
